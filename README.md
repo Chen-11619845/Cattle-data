@@ -1,7 +1,7 @@
 # Cattle-data
 R code and cattle weight longitudinal dataset from my MSc Statistics dissertation (Chen Ling, ID: 11619845). Includes GEE analysis of 60 cattle across 11 time points under two treatments.
 
-## Data Description and Visualization
+## Data Description 
 The cattle dataset includes repeated weight measurements for each subject across 11 time points, along with treatment group assignment and measurement days. Each subject corresponds to a unique cattle identifier, and the primary variables are body weight (response), treatment group (A or B), and measurement days (ranging from day 0 to day 133).  
 
 To explore the longitudinal nature of the data and illustrate within-subject correlation and temporal variation, the following figure presents a plot of weight changes over time by treatment group.
