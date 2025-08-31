@@ -11,9 +11,11 @@ We fitted GEE models with four different working correlation structures—Indepe
 The estimated coefficients and corresponding model fit (QIC) are summarized below.
 
 ### Marginal model (without interaction)
+
 $$
-\text{weight}_{ij} = \beta_0 + \beta_1 \cdot \text{days}_{ij} + \beta_2 \cdot \text{treatment}_i + \varepsilon_{ij}
+weight_{ij} = \beta_0 + \beta_1 \cdot days_{ij} + \beta_2 \cdot treatment_i + \varepsilon_{ij}
 $$
+
 
 **Table: GEE estimates under different correlation structures (without interaction)**
 
@@ -46,7 +48,8 @@ Therefore, the exchangeable structure is preferred as the final working correlat
 To examine whether treatment modifies the rate of weight change over time, we consider the following model with an interaction term between days and treatment:
 
 $$
-\text{weight}_{ij} = \beta_0 + \beta_1 \cdot \text{days}_{ij} + \beta_2 \cdot \text{treatment}_i + \beta_3 \cdot (\text{days}_{ij} \times \text{treatment}_i) + \varepsilon_{ij}
+weight_{ij} = \beta_0 + \beta_1 \cdot days_{ij} + \beta_2 \cdot treatment_i + 
+\beta_3 \cdot (days_{ij} \times treatment_i) + \varepsilon_{ij}
 $$
 
 **Table: Wald test for model comparison (with vs without interaction)**
